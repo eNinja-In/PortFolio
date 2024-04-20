@@ -1,0 +1,32 @@
+#MainContactLeft
+{
+    width: 50%;
+    justify-content: center;
+    margin: 7% 5%;
+}
+span
+{
+    font-size: 2.4rem;
+    color: white;
+}
+button
+{
+    margin: 2% 0.5% 0.5% 0.5%;
+    width: 25%;
+    height: 15%;
+    border-radius: 10px;
+
+    background-color: rgb(101, 118, 241);
+    font-size: 1rem;
+}
+button:hover
+{
+    width: 26%;
+    height: 16%;
+    color:  rgb(142, 80, 250);
+}
+button a
+{
+    color: rgb(233, 233, 250);
+    text-decoration: none;
+}
