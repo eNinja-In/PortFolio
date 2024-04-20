@@ -1,7 +1,7 @@
 body{background-color: black;}
 .navbar
 {
-    background-color: rgb(56, 55, 55);
+    background-color: rgb(53, 53, 53);
     display: flex;
     justify-content: space-around;
     margin: 1%;
@@ -21,7 +21,7 @@ body{background-color: black;}
     padding: 1%;
     margin: 0;
 }
-
+/* #logo img:hover{width: 10rem;} */
 #link ul{display: flex;    list-style: none;}
 
 #link ul li{margin: 0 0 0 4rem;}
@@ -33,10 +33,15 @@ body{background-color: black;}
     color: rgb(245, 243, 239);
     font-weight:400 ;
 }
+#link ul li a:hover
+{
+    font-size:1.4rem ;
+    color:rgb(242, 122, 82) ;
+}
 /* main */
 .MainHead
 {
-    background-color: rgb(36, 32, 32);
+    background-color: rgb(44, 44, 44);
     display: flex;
     margin: 1%;
     border-radius: 8px;
@@ -58,7 +63,82 @@ body{background-color: black;}
 
 #MainHeadRight img{width: 75%;    margin: 0 0 0 22%;}
 
-@media(width<440px)
+hr{
+    width: 97%;
+    margin: 2%;
+    height: 1px;
+    background-color: white;
+}
+.MainSkill
+{
+    background-color: rgb(37, 37, 37);
+    /* display: flex; */
+    border-radius: 8px;
+    margin: 1%;
+}
+#TechnicalSkill
+{
+    padding: 1% 4%;
+    font-size: 2.4rem;
+    color: rgb(252, 252, 247);
+}
+#Skill
+{
+    list-style: none;
+    font-size: 2rem;
+    color: white;
+    display: flex;
+}
+.slidebar
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    margin: 1% 1% 3% 0 ;
+    width: 30%;
+    backdrop-filter: blur(100px);
+    background-color: rgb(43, 42, 42);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display:none;                                       /*make it flex using javascript*/
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#sliderimg{width: 85%;    padding: 0 0 0 10%;}
+
+#click{margin: 10% 5% 10% 80%; width: 44px;}
+
+.slidebar ul
+{
+    margin: 4% 0 0 0;
+    padding: 0%;
+    list-style: none;
+    width: 100%;
+}
+
+.slidebar ul li{padding: 3.5% 0 3.5% 5%;}
+
+.slidebar ul li:hover{background-color: rgb(123, 122, 122);padding: 3.5% 0 3.5% 7%;}
+
+.slidebar ul li a
+{
+    text-decoration: none;
+    font-size:130%;
+    color: white;
+}
+
+#check{display: none;}
+
+#check:checked ~ .slidebar{display: flex;}
+
+/* #checking:checked ~ .slidebar{display: none;} */
+
+@media(width>700px)
+{
+    #click{display: none;}
+}
+@media(width<700px)
 {
     .navbar
     {
@@ -68,4 +148,11 @@ body{background-color: black;}
     {
         display: none;
     } 
+    .navbar a 
+    {
+        margin: 4% 1% 4% 22%;
+        height: 100%;
+        justify-content: flex-end;        
+    }
+
 }
