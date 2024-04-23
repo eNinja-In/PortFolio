@@ -95,7 +95,7 @@ body{background-color: black;}
     display:flex;                                       /*make it flex using javascript*/
     align-items: flex-start;
     justify-content: flex-start;
-    transition: all 1s linear;
+    transition: all 0.3s linear;
 }
 #sliderimg
 {
