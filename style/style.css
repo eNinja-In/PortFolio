@@ -1,8 +1,4 @@
-body
-{
-    background-color: black; 
-    width: 100%;
-}
+body{background-color: black;}
 .navbar
 {
     background-color: rgb(53, 53, 53);
@@ -21,22 +17,16 @@ body
 }
 #logo img
 {
-    width: 9rem;
+    width: 10rem;
     padding: 1%;
-    margin: 0;
+    margin: 0 0 0 30%;
 }
-/* #logo img:hover{width: 10rem;} */
 #link ul
 {
     display: flex;    
     list-style: none;
 }
-
-#link ul li
-{
-    margin: 0 0 0 4rem;
-}
-
+#link ul li{margin: 0 0 0 4rem;}
 #link ul li a
 {
     text-decoration: none;
@@ -49,7 +39,9 @@ body
     font-size:1.4rem ;
     color:rgb(242, 122, 82) ;
 }
-/* main */
+/* main *//* main *//* main */
+/* main *//* main *//* main */
+/* main *//* main *//* main */
 .MainHead
 {
     background-color: rgb(44, 44, 44);
@@ -60,34 +52,23 @@ body
 }
 #MainHeadLeft
 {
-    margin: 0 0 0 8%;
     width: 50%;
     color: white;
-    padding: 8% 0 0 2% ;
-    line-height: 2.9rem;
-}
-#knowbutton{
-    width:32%;
-    height: 40px;
-    padding: 2% 2%;
-    margin: 7% 0 10% 15%;
-    background-color: rgb(91, 135, 237);
-    border-radius: 10px;
-}
-#knowbutton a{    
-    color: rgb(233, 233, 250);
-    text-decoration: none;
+    justify-content: center;
+    margin: 5% 5%;
 }
 #MainHeadLeft span
 {
     color: rgb(248, 249, 245);    
-    font-size: 3rem;
+    font-size: 270%;
 }
-
-#MainHeadLeft span sub
+#MainHeadLeft p
 {
-    font-size: 40%;
+    font-style: italic;
+    color: rgb(138, 137, 137);
+    padding: 0 8% 0 0;
 }
+#MainHeadLeft span sub{font-size: 40%;}
 #MainHeadRight
 {
     width: 50%;    
@@ -95,14 +76,15 @@ body
 }
 #MainHeadRight img
 {
-    width: 75%;    
-    margin: 0 0 0 13%;
+    width: 79%;    
+    margin: 2% 0 0 13%;
+    transition: all 1s ease;
 }
 .slidebar
 {
     position: fixed;
     top: 0;
-    left: -800px;
+    left: -200px;
     height: 96%;
     margin: 2% 0 2% 2%;
     width: 42%;
@@ -129,17 +111,12 @@ body
     width: 100%;
 }
 
-.slidebar ul li
-{
-    padding: 3.5% 0 3.5% 5%;
-}
-
+.slidebar ul li{padding: 3.5% 0 3.5% 5%;}
 .slidebar ul li:hover
 {
     background-color: rgb(123, 122, 122);
     padding: 3.5% 0 3.5% 7%;
 }
-
 .slidebar ul li a
 {
     text-decoration: none;
@@ -152,29 +129,125 @@ body
     margin: 10% 5% 10% 80%;
     width: 44px;
 }
-#canceling
-{
-    display: none;
-}
+#canceling{display: none;}
 label #check,label #cancel
 {
     position: absolute;  
     cursor: pointer;
 }
-
-#check
-{
-    display: none;
-}
+#check{display: none;}
 #check:checked ~ .slidebar
 {
     display: flex; 
     left:0px;
 }
 
+
+/* Skill Portion On Index Page */
+.mainskill
+{
+    background-color: rgb(35, 35, 35);
+    justify-content: center;
+    margin: 1%;
+    height: auto;
+    padding: 0 0.5% 5% 0.5%;
+    border-radius: 8px;
+}
+#mainskillupper{padding: 4% 0 0% 5%;}
+#mainskillupper span
+{
+    color: white;
+    font-size: 3rem;
+    /* text-decoration: underline 3px solid rgb(123, 122, 122); */
+}
+#mainskillupper p
+{
+    font-style: italic;
+    color: rgb(138, 137, 137);
+    padding: 0 8% 0 0;
+}
+#skilling
+{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0 5%;
+}
+
+.flip-card {
+    background-color: rgb(243, 235, 235);
+    /* width: 300px; */
+    /* height: 300px; */
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    margin: 1% 3% 4% 1%;
+}
+.flip-card-inner {
+  position: relative;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  padding: 2%;
+  /* text-align: center; */
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  box-shadow: 0 5px 10px 0 rgba(242, 240, 240, 0.2);
+}
+
+.flip-card:hover .flip-card-inner{transform: rotateY(180deg);}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  padding: 5%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ded9d9;
+  color: rgb(250, 242, 242);
+}
+.flip-card-front span{font-size: 2.2rem;}
+.flip-card-front img{height: 88%;}
+.flip-card-back {
+    font-size: 85%;
+    display: flex;
+    justify-content: center;
+  background-color: #e8edf0;
+  color: rgb(202, 199, 199);
+  padding: 10% 0 10% 18%;
+  /* line-height: 0.7rem; */
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+#skilling div{
+    background-color:transparent;
+    height: 9rem;
+    width: 10rem;
+}
+#mainskilldown li span
+{
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#mainskilldown img 
+{
+    width: 8rem;
+    margin: 1% 0 0 3.4%;
+}
+
+
+
+
 @media(width>700px)
 {
     #click{display: none;}
+    .slidebar{display: none;}
+
 }
 
 @media(width<700px)
@@ -182,14 +255,13 @@ label #check,label #cancel
     .navbar
     {
         justify-content: center;
+        height: auto;
     }
-    #link ul
-    {
-        display: none;
-    } 
+    #link ul{display: none;} 
+    #logo img{margin: 0;}
     .navbar a 
     {
-        margin: 4% 1% 4% 22%;
+        margin: 0;
         justify-content: flex-end;        
     }
     .MainHead
@@ -198,14 +270,8 @@ label #check,label #cancel
         display: inline-block;
         justify-content: center;
     }
-    #MainHeadLeft
-    {
-        width: 100%;;
-    }
-    #MainHeadRight
-    {
-        width: 100%;justify-items: center;
-    }
+    #MainHeadLeft{width: 100%;}
+    #MainHeadRight{width: 100%;justify-items: center;}
     #MainHeadRight img
     {
         margin: 4% 5% 2% 5%;
@@ -216,6 +282,8 @@ label #check,label #cancel
         font-size: 230%;
         line-height: normal;
     }
+    #skilling{padding: 0;}
+    #MainHeadLeft span{font-size: 220%;}
 
 
 
@@ -228,3 +296,4 @@ label #check,label #cancel
     }
 
 }
+
